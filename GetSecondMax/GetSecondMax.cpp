@@ -20,8 +20,10 @@ int GetSecondMax(int Numbers[],int Size)
 				
 			}
 			
-			if (SecondMax > Max)
-				swap(SecondMax, Max);
+			else if (SecondMax < Numbers[i])
+			{
+				SecondMax = Numbers[i];
+			}
 		}
 		return SecondMax;
 	
